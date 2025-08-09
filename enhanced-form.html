@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates advanced HTML5 content and form features.</p>
+  </header>
+<main>
+  <section>
+  <h2>Types of HTML5 Lists</h2>
+
+  <!-- Unordered List -->
+  <h3>Common HTML5 Features</h3>
+  <ul>
+    <li>Semantic Elements</li>
+    <li>Media Embedding</li>
+    <li>Form Validation</li>
+  </ul>
+
+  <!-- Ordered List -->
+  <h3>Steps to Create a Form</h3>
+  <ol>
+    <li>Define the form structure</li>
+    <li>Add input fields</li>
+    <li>Apply validation attributes</li>
+    <li>Test and refine</li>
+  </ol>
+
+  <!-- Nested List -->
+  <h3>Form Input Types</h3>
+  <ul>
+    <li>Text Inputs
+      <ul>
+        <li>Text</li>
+        <li>Email</li>
+        <li>Password</li>
+      </ul>
+    </li>
+    <li>Selection Inputs
+      <ul>
+        <li>Radio Buttons</li>
+        <li>Checkboxes</li>
+        <li>Dropdown Menus</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- Definition List -->
+  <h3>HTML5 Terminology</h3>
+  <dl>
+    <dt>Semantic HTML</dt>
+    <dd>HTML that clearly describes its meaning to both the browser and the developer.</dd>
+
+    <dt>Form Validation</dt>
+    <dd>Techniques used to ensure correct and complete user input before submission.</dd>
+
+    <dt>Fieldset</dt>
+    <dd>A grouping element used to organize related form controls.</dd>
+  </dl>
+</section>
+  <section>
+    <h2>HTML5 Input Types Comparison</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Input Type</th>
+          <th>Purpose</th>
+          <th>Validation Support</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>email</td>
+          <td>Collect email addresses</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>number</td>
+          <td>Numeric input</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>date</td>
+          <td>Date selection</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>HTML5 Media Demo</h2>
+    <figure>
+    <a href="https://via.placeholder.com/300x200" target="_blank">
+        <img src="https://via.placeholder.com/300x200" alt="Sample scenic landscape">
+      </a>
+      <figcaption>Sample Image using HTML5 (click to view full size)</figcaption>
+    </figure>
+
+    <figure>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <figcaption>Sample audio clip</figcaption>
+    </figure>
+
+    <figure>
+      <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Sample video clip</figcaption>
+    </figure>
+  </section>
+  <section>
+    <h2>Contact Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="3" placeholder="John Doe" pattern="[A-Za-z\s]{3,50}" title="Name must be 3-50 letters or spaces" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" autocomplete="email" />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required placeholder="Enter age (18-99)" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" />
+
+        <label for="website">Your Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" pattern="[A-Za-z0-9]{6,}" title="Password must be at least 6 alphanumeric characters" />
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" cols="50" maxlength="200" placeholder="Tell us about yourself..."></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+</main>
+  <footer>
+    <p>&copy; 2025 Yvonne Kawira. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
